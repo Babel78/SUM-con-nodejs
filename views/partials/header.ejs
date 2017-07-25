@@ -1,0 +1,17 @@
+<header class="nav">
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills ">
+                    <%if (user) {%>
+                        <li role="presentation"><a href="/">Dashboard</a></li>
+                        <li role="presentation"><a href="/users/logout">Logout</a></li>
+                        <%}%>
+
+                            <li role="presentation"><a href="/users/login">Login</a></li>
+                            <li role="presentation"><a href="/users/form">Register</a></li>
+
+                </ul>
+            </nav>
+        </div>
+</header>

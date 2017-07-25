@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<% include ../views/partials/head %>
+
+    <body>
+        <% include ../views/partials/header %>
+            <center>
+                <h1>Formulario de Registro</h1>
+            </center>
+
+            <div class="container">
+                <table class="table table-hover">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%=user.name%>
+                        </td>
+                        <td>
+                            <%=user.lastname%>
+                        </td>
+                        <td>
+                            <%=user.email%>
+                        </td>
+                        <td>
+                            <%=user.username%>
+                        </td>
+                        <td>
+                            <%=user.password%>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                </table>
+            </div>
+    </body>
+    <br/>
+    <% include ../views/partials/footer %>
+
+</html>

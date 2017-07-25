@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<% include ../views/partials/head %>
+
+    <body>
+        <% include ../views/partials/header %>
+            <center>
+                <h1>Formulario de Registro</h1>
+            </center>
+            <div class="container">
+                <form class="form" method="post" action="/users/register">
+                    <div class="form-group">
+                        <label for="">Nombre</label>
+                        <input type="text" name="name" value="" class="form-element">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Apellidos</label>
+                        <input type="text" name="lastname" value="" class="form-element">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="email" value="" class="form-element">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Username</label>
+                        <input type="text" name="username" value="" class="form-element">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" name="password" value="" class="form-element">
+                    </div>
+                    <br/>
+                    <center><button type="submit" class="btn btn-primary">Registrar</button></center>
+                </form>
+            </div>
+    </body>
+    <br/>
+    <% include ../views/partials/footer %>
+
+</html>
